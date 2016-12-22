@@ -13,10 +13,16 @@ int main(int argc, char * argv[])
     struct sockaddr_in sock_addr, sock_clinet_addr;
     char buf[1024];
 
-    if(argc != 2){
+    if(argc < 2){
         printf("Usage %s <PORT>\n",argv[CMD]);
         exit(1);
     }
+    
+// 브로드케스트 옵션을 {{
+    if(strcmp(argc[2],"-eb"){
+   
+    }
+// }} 받는 부분
 
 // 소켓을 {{
     sock=socket(AF_INET,SOCK_STREAM,0);
